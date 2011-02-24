@@ -16,14 +16,12 @@ var Clock = {
 		document.getElementById('body').style.backgroundColor = 'rgb(' + hex_hours + ',' + hex_minutes + ',' + hex_seconds + ')';
 	},
 	switchToDec: function (){
-		document.getElementById('hex').className = 'clock hidden';
-		document.getElementById('dec').className = 'clock';
+		document.getElementById('both_clocks').className = '';
 		document.getElementById('to_dec').className = 'selected';
 		document.getElementById('to_hex').className = '';
 	},
 	switchToHex: function (){
-		document.getElementById('dec').className = 'clock hidden';
-		document.getElementById('hex').className = 'clock';
+		document.getElementById('both_clocks').className = 'hex';
 		document.getElementById('to_hex').className = 'selected';
 		document.getElementById('to_dec').className = '';
 	},
