@@ -5,9 +5,9 @@ var Clock = {
 		document.getElementById('dec_minutes').innerHTML = ((now.getMinutes()<10)?'0':'') + now.getMinutes();
 		document.getElementById('dec_seconds').innerHTML = ((now.getSeconds()<10)?'0':'')  + now.getSeconds();
 		
-		var hex_hours = parseInt((now.getHours()*255)/24);
-		var hex_minutes = parseInt((now.getMinutes()*255)/60);
-		var hex_seconds = parseInt((now.getSeconds()*255)/60);
+		var hex_hours = parseInt((now.getHours()*255)/23);
+		var hex_minutes = parseInt((now.getMinutes()*255)/59);
+		var hex_seconds = parseInt((now.getSeconds()*255)/59);
 		
 		document.getElementById('hex_hours').innerHTML = ((hex_hours.toString(16).length == 1)?'0':'') + hex_hours.toString(16);
 		document.getElementById('hex_minutes').innerHTML = ((hex_minutes.toString(16).length == 1)?'0':'') + hex_minutes.toString(16);

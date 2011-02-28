@@ -5,16 +5,16 @@ body {
 	font-family: 'Droid Sans', arial, serif;
 	/* Firefox */
 	-moz-transition-property: background-color;
-	-moz-transition-duration: 0.5s;
+	-moz-transition-duration: 1s;
 	/* WebKit */
 	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 0.5s;
+	-webkit-transition-duration: 1s;
 	/* Opera */
 	-o-transition-property: background-color;
-	-o-transition-duration: 0.5s;
+	-o-transition-duration: 1s;
 	/* Standard */
 	transition-property: background-color;
-	transition-duration: 0.5s;
+	transition-duration: 1s;
 	
 	cursor:default;
 	
@@ -90,7 +90,9 @@ div.active {
 	bottom:0;
 	left:0;
 	right:0;
+	background-image: url(radial.svg);
 	background-image: -webkit-radial-gradient(transparent, #444);
+	background-image: -moz-radial-gradient(transparent, #444);
 	opacity:0.4;
 }
 
@@ -145,7 +147,8 @@ a {
 }
 
 #clock_selector {
-text-align:center;
+	text-align:center;
+	white-space : nowrap;
 }
 
 #to_dec, #to_hex {
